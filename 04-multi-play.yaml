@@ -11,5 +11,5 @@
   connection: local
   tasks:
   - name: PLAY2 and TASK1
-  ansible.builtin.debug:
-    msg: "helloo from PLAY2 and TASK1"
+    ansible.builtin.debug:
+      msg: "helloo from PLAY2 and TASK1"
