@@ -1,7 +1,7 @@
 - name: print variables via prompt
   hosts: local
   connection: local
-  var_prompt:
+  vars_prompt:
   - name: COURSE
     prompt: please enter course name
     private: false # by default it is true and confidential
@@ -10,7 +10,7 @@
     private: false
   - name: TRAINER
     prompt: please enter trainer name
-    
+
   tasks:
   - name: print the course details
     ansible.builtin.debug:
