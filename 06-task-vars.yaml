@@ -13,3 +13,8 @@
       TRAINER: "SAI"
     ansible.builtin.debug:
       msg: "course is {{COURSE}} for {{DURATION}}, trainer is {{TRAINER}}"
+  
+   tasks:
+  - name: print variables
+    ansible.builtin.debug:
+      msg: "course is {{COURSE}} for {{DURATION}}, trainer is {{TRAINER}}"
