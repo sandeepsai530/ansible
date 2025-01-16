@@ -10,5 +10,5 @@
     prompt: please enter trainer name
   tasks:
   - name: print course details
-    ansible.builtin.plugin:
+    ansible.builtin.debug:
       msg: "course is {{COURSE}} for {{DURATION}} and trainer is {{TRAINER}}"
