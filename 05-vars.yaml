@@ -7,9 +7,5 @@
     TRAINER: "SAI SANDEEP"
   tasks:
   - name: print variables
-    vars: # task level variables
-      COURSE: "ANSIBLE"
-      CURATION: 10HRS
-      TRAINER: "SAI"
     ansible.builtin.debug:
       msg: "course is {{COURSE}} for {{DURATION}}, trainer is {{TRAINER}}"
